@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de CV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Générateur de CV</h1>
+            <p>Créez un CV professionnel en quelques minutes</p>
+            <button id="createCVButton">Commencer</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="form-section">
+            <div class="container">
+                <h2>Mes informations</h2>
+                <form id="cvForm">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" placeholder="Entrez votre nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="Entrez votre email" required>
+
+                    <label for="education">Formation :</label>
+                    <input type="text" id="education" placeholder="Votre formation" required>
+
+                    <label for="experience">Expérience :</label>
+                    <textarea id="experience" placeholder="Décrivez votre expérience professionnelle"></textarea>
+
+                    <label for="skills">Compétences :</label>
+                    <input type="text" id="skills" placeholder="Listez vos compétences" required>
+
+                    <button type="submit" class="submit-button">Créer mon CV</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="cvPreview" class="cv-preview hidden">
+            <div class="container">
+                <h2>Prévisualisation du CV</h2>
+                <div id="cvContent">
+                    <!-- Le CV sera généré ici -->
+                </div>
+                <button id="downloadButton">Télécharger en PDF</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Générateur de CV - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
